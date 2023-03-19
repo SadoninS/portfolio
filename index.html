@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/index.css" />
+        <meta charset="UTF-8" />
+
+        <title>Портфолио - Садонин Станислав</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Manrope&display=swap"
             rel="stylesheet"
         />
-        <meta charset="UTF-8" />
-        <title>WebDeveloperPortfolio</title>
+
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/index.css" />
     </head>
     <body>
-        <header>
-            <section class="intro">
-                <a href="#" class="logo">sadonin</a>
-                <ul class="nav">
-                    <li><a href="#projects" class="navLink">портфолио</a></li>
-                    <li><a href="#skills" class="navLink">компетенции</a></li>
-                    <li><a href="#tasks" class="navLink">услуги</a></li>
-                    <li><a href="#contacts" class="navLink">контакты</a></li>
-                </ul>
+        <header class="header">
+            <div class="header-nav-and-text-wrapper">
                 <h1>
                     Привет, я Станислав — фронтенд разработчик и дизайнер сайтов
                 </h1>
-                <p class="header-text">
+                <a href="#" class="logo">sadonin</a>
+                <nav class="nav">
+                    <a href="#projects" class="navLink">портфолио</a>
+                    <a href="#skills" class="navLink">компетенции</a>
+                    <a href="#services" class="navLink">услуги</a>
+                    <a href="#contacts" class="navLink">контакты</a>
+                </nav>
+                <p class="header-description">
                     Разрабатываю имиджевые сайты для малого и среднего бизнеса,
                     которые повышают престиж компании и позволяют выделиться на
                     фоне конкурентов
                 </p>
-            </section>
+            </div>
         </header>
         <main>
             <section class="projects">
                 <h2 id="projects">Самые свежие проекты</h2>
-                <ul>
-                    <li class="project-img-metrika">
-                        <a href="https://sadonins.github.io/SD.MetrikaDesingStudio/">
+                <ul class="projects-list">
+                    <li>
+                        <a class="project-metrika"
+                            href="https://sadonins.github.io/SD.MetrikaDesingStudio/"
+                        >
+                            <p class="project-title">Metrika</p>
+                            <p class="project-description">
+                                Дизайн, верстка, настройка
+                            </p>
                         </a>
-                        <h3 class="project-h3">Metrika</h3>
-                        <p class="project-p">Дизайн, верстка, настройка</p>
                     </li>
                     <li>
-                        <img
-                            class="project-img"
-                            src="resources/projects/project_glass.png"
-                            alt="проект сайта очков"
-                        />
-                        <h3 class="project-h3">GLASS</h3>
-                        <p class="project-p">Разработка интерфейса</p>
+                        <a  class="project-glass" href="">
+                            <p class="project-title">GLASS</p>
+                            <p class="project-description">Разработка интерфейса</p>
+                        </a>
                     </li>
                     <li>
-                        <img
-                            class="project-img"
-                            src="resources/projects/project_fesiyen.png"
-                            alt="проект сайта бренда одежды"
-                        />
-                        <h3 class="project-h3">Fesiyen</h3>
-                        <p class="project-p">Разработка интерфейса</p>
+                        <a  class="project-fesiyen" href="">
+                            <p class="project-title">Fesiyen</p>
+                            <p class="project-description">Разработка интерфейса</p>
+                        </a>
                     </li>
                 </ul>
                 <a class="btn-show-all-projects" href="#"
                     >Смотреть все проекты</a
                 >
             </section>
-            <section id="skills">
+            <section class="skills" id="skills">
                 <h2>Мои компетенции</h2>
                 <ul>
                     <li>
                         <img
-                            class="skills-icon"
+                            class="skill-icon"
                             src="resources/icons/html-icon.png"
                             alt="иконка Html"
                         />
-                        <h3 class="skills-h3">HTML и CSS</h3>
-                        <p class="skills-p">
+                        <p class="skill-title">HTML и CSS</p>
+                        <p class="skill-description">
                             Это основа фронтенд разработки. Умение создавать и
                             правильно структурировать HTML-документы, а также
                             применять стили к этим документам на CSS, является
@@ -85,12 +86,12 @@
                     </li>
                     <li>
                         <img
-                            class="skills-icon"
+                            class="skill-icon"
                             src="resources/icons/js-icon.png"
                             alt="иконка JS"
                         />
-                        <h3 class="skills-h3">JavaScript</h3>
-                        <p class="skills-p">
+                        <p class="skill-title">JavaScript</p>
+                        <p class="skill-description">
                             Это язык программирования, который используется для
                             создания динамического и интерактивного
                             пользовательского интерфейса. Хороший фронтенд
@@ -102,14 +103,14 @@
                     </li>
                     <li>
                         <img
-                            class="skills-icon"
+                            class="skill-icon"
                             src="resources/icons/frame-icon.png"
                             alt="иконка фреймворка"
                         />
-                        <h3 class="skills-h3">
+                        <p class="skill-title">
                             Работа с библиотеками и фреймворками
-                        </h3>
-                        <p class="skills-p">
+                        </p>
+                        <p class="skill-description">
                             Фронтенд разработчики должны быть знакомы с
                             различными библиотеками и фреймворками, такими как
                             React, Angular, Vue и другими. Умение использовать
@@ -120,15 +121,15 @@
                     </li>
                     <li>
                         <img
-                            class="skills-icon"
+                            class="skill-icon"
                             src="resources/icons/react-icon.png"
                             alt="иконка React"
                         />
-                        <h3 class="skills-h3">
+                        <p class="skill-title">
                             Разработка для мобильных устройств и адаптивная
                             верстка
-                        </h3>
-                        <p class="skills-p">
+                        </p>
+                        <p class="skill-description">
                             Знание специфики мобильной разработки является
                             неотъемлемым навыком для любого современного
                             фронтенд-разработчика. Мобильный трафик составляет
@@ -138,17 +139,19 @@
                     </li>
                 </ul>
             </section>
-            <section id="tasks">
+            <section class="services" id="services">
                 <h2>Помогаю решать широкий спектр задач</h2>
-                <ul>
+                <ul class="services-list">
                     <li>
                         <img
-                            src="resources/tasks/develop.png"
+                            src="resources/services/develop.png"
                             alt="разработка сайта под ключ"
                         />
-                        <div class="task-text-wrapper">
-                            <h3>Разработка сайта под ключ</h3>
-                            <p>
+                        <div class="service-text-wrapper">
+                            <p class="service-title">
+                                Разработка сайта под ключ
+                            </p>
+                            <p class="service-description">
                                 Это создание дизайн веб-сайтов, созданный для
                                 удобства пользователя и решения бизнес-задач
                                 Сайты должны быть понятными и удобными, ведь чем
@@ -159,12 +162,12 @@
                     </li>
                     <li>
                         <img
-                            src="resources/tasks/layout.png"
+                            src="resources/services/layout.png"
                             alt="верстка сайтов"
                         />
-                        <div class="task-text-wrapper">
-                            <h3>Верстка сайтов</h3>
-                            <p>
+                        <div class="service-text-wrapper">
+                            <p class="service-title">Верстка сайтов</p>
+                            <p class="service-description">
                                 Это процесс создания HTML-документов и
                                 применения к ним стилей на CSS. Фронтенд
                                 разработчик может помочь создать привлекательный
@@ -174,12 +177,14 @@
                     </li>
                     <li>
                         <img
-                            src="resources/tasks/mobile-develop.png"
+                            src="resources/services/mobile-develop.png"
                             alt="Разработка мобильного интерфейса"
                         />
-                        <div class="task-text-wrapper">
-                            <h3>Разработка мобильного интерфейса</h3>
-                            <p>
+                        <div class="service-text-wrapper">
+                            <p class="service-title">
+                                Разработка мобильного интерфейса
+                            </p>
+                            <p class="service-description">
                                 Это процесс создания интерактивных элементов на
                                 странице с помощью JavaScript. Фронтенд
                                 разработчик может помочь создать динамический и
@@ -190,20 +195,20 @@
                     </li>
                 </ul>
             </section>
-            <section id="contacts">
+            <section class="contacts" id="contacts">
                 <div class="contacts-wrapper-center">
                     <div class="contacts-wrapper">
-                        <p>для связи:</p>
+                        <h2 class="contacts-wrapper-h2">для связи:</h2>
                         <a href="https://www.instagram.com/stanislavsadonin88/"
                             >instagram</a
                         >
-                        <a href="https://t.me/StanislavSadonin">telegram</a>
+                        <a href="tg://resolve?domain=StanislavSadonin">telegram</a>
                         <a href="mailto:stanislavsadonin@gmail.com">mail</a>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="footer-wrapper">
                 <p>Портфолио фронтенд-разработчика Станислава Садонина</p>
                 <p>Все права защищены. 2023</p>
