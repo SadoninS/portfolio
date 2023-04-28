@@ -91,4 +91,33 @@
         line-height: 19px;
     }
 }
-@media (max-width: 560px) {}
+@media (max-width: 560px) {
+    .footer{
+        gap: 40px;
+        padding: 50px 15px 35px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .footer-contacts{
+        justify-content: flex-start;
+    }
+
+    .copyright{
+        flex-direction: column;
+    }
+    .footer-title{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .footer-link{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .footer-subtitle{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
