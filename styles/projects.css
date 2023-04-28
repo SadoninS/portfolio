@@ -1,0 +1,169 @@
+.project-metrika {
+    position: relative;
+    display: block;
+    width: 1150px;
+    height: 550px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../resources/projects/metrika.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.project-glass {
+    position: relative;
+    display: block;
+    width: 1150px;
+    height: 550px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../resources/projects/project_glass.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.project-fesiyen {
+    position: relative;
+    display: block;
+    width: 1150px;
+    height: 550px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../resources/projects/project_fesiyen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.project-buble {
+    padding: 0 20px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 20px;
+    line-height: 47px;
+    color: #000000;
+    background-color: #1BFF07;
+    border-radius: 100px;
+}
+
+
+.projects-list li {
+    position: relative;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.project-description {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.projects li:last-child {
+    margin-bottom: 80px;
+}
+
+.btn-show-all-projects {
+    display: block;
+    width: 582px;
+    height: 153px;
+    background: #1BFF07;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 153px;
+    border: 2px solid #1BFF07;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-show-all-projects:hover {
+    background-color: #000000;
+    color: #1BFF07
+}
+
+@media (max-width: 1180px) {
+
+    .project-metrika,
+    .project-glass,
+    .project-fesiyen {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .project-buble {
+        top: 40px;
+        left: 40px;
+        font-size: 16px;
+        line-height: 38px;
+        border-radius: 80px;
+    }
+
+    .project-metrika,
+    .project-glass,
+    .project-fesiyen {
+        height: 445px;
+        border-radius: 25px;
+    }
+
+    .project-title {
+        left: 40px;
+        bottom: 80px;
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .project-description {
+        bottom: 40px;
+        left: 40px;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .projects li:last-child {
+        margin-bottom: 64px;
+    }
+
+    .btn-show-all-projects {
+        width: 100%;
+        height: 124px;
+        font-size: 25px;
+        line-height: 124px;
+    }
+
+
+}
+
+
+
+@media (max-width: 460px) {
+
+    .project-title {
+        left: 22px;
+        bottom: 76px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .project-description {
+        bottom: 50px;
+        left: 22px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .projects li:last-child {
+        margin-bottom: 60px;
+    }
+    .btn-show-all-projects {
+        height: 80px;
+        font-size: 18px;
+        line-height: 80px;
+    }
+}

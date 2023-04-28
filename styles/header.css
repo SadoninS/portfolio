@@ -1,0 +1,171 @@
+.header {
+    margin: 0 auto 150px;
+    height: 765px;
+    background: url(../resources/header/sadonin.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 25%;
+    background-size: cover;
+    position: relative;
+}
+
+.header-nav-and-text-wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1180px;
+    height: 765px;
+}
+
+.nav-wrapper {
+    height: 100px;
+    width: 1180px;
+    padding: 29px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 6px;
+    width: 182px;
+    height: 42px;
+    background: #000000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1BFF07;
+}
+
+.nav {
+    display: flex;
+}
+
+.navLink {
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: lowercase;
+    text-decoration: none;
+
+}
+
+.navLink:hover {
+    color: #1BFF07;
+}
+
+.title-wrapper {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+h1,
+.header-description {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+h1 {
+    width: 900px;
+
+    font-size: 80px;
+    line-height: 70px;
+    color: #1BFF07;
+    letter-spacing: -0.03em;
+}
+
+.header-description {
+    width: 445px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+@media (max-width: 1180px) {
+
+    .nav-wrapper {
+        width: 100%;
+    }
+
+    .header-nav-and-text-wrapper {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .title-wrapper {
+        width: 80%;
+    }
+
+    h1 {
+        width: initial;
+        font-size: 65px;
+    }
+
+    .header-description {
+        width: 50%;
+    }
+
+
+}
+
+@media (max-width: 960px) {
+
+    .header {
+        margin-bottom: 100px;
+        background-position: 40% 25%;
+
+    }
+
+    .title-wrapper {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .header-description {
+        width: 65%;
+        font-size: 18px;
+        line-height: 22px;
+
+    }
+
+    .nav {
+        display: none;
+    }
+
+    
+
+}
+
+@media (max-width: 460px) {
+    .header {
+        margin-bottom: 60px;
+        height: 600px;
+        background-position: 40% 25%;
+    }
+
+    .title-wrapper {
+        width: 100%;
+        bottom: 10px;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .header-description {
+        width: 70%;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+}

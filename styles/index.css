@@ -1,16 +1,19 @@
 body {
-    width: 1400px;
     min-width: 100%;
     font-family: 'IBM Plex Mono';
     font-style: normal;
     font-weight: 400;
-   
     background-color: #000000;
+}
+
+.body-fixed,
+.body-fixed-2 {
+    overflow: hidden;
 }
 
 section {
     margin: 0 auto 150px;
-    width: 1150px;
+    width: 1180px;
 }
 
 a,
@@ -26,7 +29,66 @@ h2 {
     line-height: 72px;
 }
 
-.header {
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+input{
+    font-family: inherit;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+
+@media (max-width: 1180px) {
+    section {
+        padding:0 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    section {
+        margin-bottom: 100px;
+        padding:0 15px;
+        width: 100%;
+
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        font-size: 45px;
+        line-height: 58px;
+    }
+}
+
+@media (max-width: 460px) {
+    section {
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        margin-bottom: 35px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+}
+
+/* .header {
     margin: 0 auto 150px;
     height: 765px;
     background: url(../resources/header/sadonin.jpg);
@@ -75,9 +137,9 @@ h2 {
 
 .navLink:hover {
     color: #1BFF07;
-}
+} */
 
-h1 {
+/* h1 {
     position: absolute;
     top: 466px;
     font-size: 80px;
@@ -92,9 +154,9 @@ h1 {
     top: 334px;
     font-size: 20px;
     line-height: 26px;
-}
+} */
 
-.project-metrika {
+/* .project-metrika {
     display: block;
     width: 1150px;
     height: 550px;
@@ -164,9 +226,9 @@ h1 {
 .btn-show-all-projects:hover {
     background-color: #000000;
     color: #1BFF07
-}
+} */
 
-.skill-title {
+/* .skill-title {
     margin: 16px auto 15px;
     font-size: 35px;
     line-height: 46px;
@@ -178,9 +240,9 @@ h1 {
     width: 780px;
     font-size: 22px;
     line-height: 29px;
-}
+} */
 
-.service-text-wrapper {
+/* .service-text-wrapper {
     padding: 40px 0 0 40px;
     width: 1150px;
     height: 283px;
@@ -206,9 +268,9 @@ h1 {
 .services-list li{
     margin-bottom:74px;
 
-}
+} */
 
-.contacts {
+/* .contacts {
     padding-top: 320px;
     min-width: 100%;
     height: 717px;
@@ -240,9 +302,9 @@ h1 {
 
 .contacts-wrapper a:hover {
     color: #1BFF07
-}
+} */
 
-.footer {
+/* .footer {
     height: 223px;
     background: #FFFFFF;
     border-top-left-radius: 30px;
@@ -271,4 +333,4 @@ h1 {
     line-height: 27px;
     color: #000000;
     opacity: 0.5;
-}
+} */
