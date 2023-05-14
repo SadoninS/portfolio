@@ -152,7 +152,7 @@ h1 {
     }
 
     .title-wrapper {
-        width: 100%;
+        width: 90%;
         bottom: 10px;
         gap: 10px;
     }
@@ -160,6 +160,7 @@ h1 {
     h1 {
         font-size: 30px;
         line-height: 40px;
+        width: 100%;
     }
 
     .header-description {
